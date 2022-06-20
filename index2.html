@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Upload and display image in Flask</h1>
+<p>Predicting image</p>
+<label for="choose_model">choose a model:</label>
+  <select model="CNN" id="choose_model">
+      <option value="CNN">CNN</option>
+      <option value="CNN2">CNN2<br></option>
+  </select><br>
+<form method="POST" enctype="multipart/form-data" action="/">
+    <input type="file" id="myFile" name="uploaded-file" accept=".png">
+    <input type="submit" value="Submit">
+</form>
+<br>
+<p style="color:blue;">Choose image file to upload</p>
+<form action="/show_data" target="blank">
+    <input type="submit" value="Predict"/>
+</form>
+</body>
+</html>

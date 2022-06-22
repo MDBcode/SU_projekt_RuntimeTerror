@@ -1,0 +1,12 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+}
+
+.form-div {
+    width: 30%;
+    padding: 2px;
+    border: 1px solid gray;
+    border-radius: 3px;
+}

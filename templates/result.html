@@ -6,18 +6,20 @@
     <link rel="stylesheet" href="{{url_for('static', filename='styles.css')}}">
 </head>
 <body>
-<h1>Pretvorba satelitske snimke u Google mapu</h1>
+<div class="header">
+  <h1>Pretvorba satelitske snimke u Google mapu</h1>
+</div>
 <div class="grid-container">
-    <div class="grid-child satellite">
+    <div class="grid-child-satellite">
         <img src="{{ url_for('static', filename=satellite) }}" alt="Satelitska slika">
     </div>
-    <div class="grid-child map">
+    <div class="grid-child-map">
         <img src="data:image/jpg;base64,{{ map }}" alt="Mapa">
     </div>
 </div>
 <br>
-<button>
-    <a href="{{url_for('home')}}" >Nazad</a>
+<button class="go-back">
+    <a class="anchor" href="{{url_for('home')}}" >Nazad</a>
 </button>
 
 </body>

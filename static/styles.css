@@ -1,12 +1,50 @@
+.header {
+  padding: 10px;
+  text-align: center;
+  background: #1abc9c;
+  color: white;
+}
+
 .grid-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 10px;
+    margin: auto;
+    width: 50%;
+    display: flex;
+    margin-top: 40px;
+    justify-content: space-between;
+}
+
+.grid-child-satellite{
+    float: left;
+}
+
+.grid-child-map{
+    float: right;
 }
 
 .form-div {
+    margin: auto;
     width: 30%;
-    padding: 2px;
     border: 1px solid gray;
     border-radius: 3px;
+    padding: 5px;
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+}
+
+.go-back{
+    margin: auto;
+    display: block;
+    margin-top: 10px;
+    background: #1abc9c;
+    border: 0px;
+    border-radius: 2px;
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.anchor{
+    color: white;
+    text-decoration:none;
 }
